@@ -160,7 +160,6 @@ export default function Dashboard({ auth, items = [], users = [], flash, errors 
 
   return (
     <AuthenticatedLayout
-      header={<h2 className="text-xl font-semibold leading-tight text-gray-800">Dashboard - Item Management</h2>}
     >
       <Head title="Dashboard" />
 
@@ -190,15 +189,6 @@ export default function Dashboard({ auth, items = [], users = [], flash, errors 
                 )
               })}
             </nav>
-
-            <div className="absolute bottom-4 left-4 right-4">
-              <Link href="/logout" method="post">
-                <div className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
-                  <LogOut className="w-4 h-4 mr-2" />
-                  Logout
-                </div>
-              </Link>
-            </div>
           </div>
 
           {/* Main content */}
